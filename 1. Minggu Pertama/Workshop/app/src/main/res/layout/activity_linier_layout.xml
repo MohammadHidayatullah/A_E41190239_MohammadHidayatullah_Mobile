@@ -8,7 +8,6 @@
     android:paddingLeft="16dp"
     android:orientation="vertical"
     tools:context=".LinierLayout">
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,5 +31,4 @@
         android:layout_gravity="right"
         android:id="@+id/Submit"
         android:text="@string/send"/>
-
 </LinearLayout>
