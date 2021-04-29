@@ -29,6 +29,7 @@
         android:layout_marginStart="96dp"
         android:onClick="next"
         android:text="@string/click_to_view" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -39,6 +40,7 @@
         android:layout_marginBottom="19dp"
         android:onClick="savePublic"
         android:text="@string/save_as_public" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -50,6 +52,7 @@
         android:layout_marginBottom="0dp"
         android:onClick="savePrivate"
         android:text="@string/save_as_private" />
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
