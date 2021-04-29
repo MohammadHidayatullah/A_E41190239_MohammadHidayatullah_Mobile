@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void savePrivate(View view) {
         String info = editText.getText().toString();
-        File folder = getExternalFilesDir("Firman Wahyudi");// Folder Name
+        File folder = getExternalFilesDir("Mohammad Hidayatullah");// Folder Name
         File myFile = new File(folder, "myData2.txt");// Filename
         writeData(myFile, info);
         editText.setText("");
