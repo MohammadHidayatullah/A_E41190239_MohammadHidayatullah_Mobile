@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     DataHelper dbCenter;
     public static MainActivity ma;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.btn_logout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Menghapus Status login dan kembali ke Login Activity
+                com.example.belajarsqlite.Preferences.clearLoggedInUser(getBaseContext());
+                startActivity(new Intent(getBaseContext(),LoginActivity.class));
+                finish();
+            }
+        });
+
+
 
         ma = this;
         dbCenter = new DataHelper(this);
